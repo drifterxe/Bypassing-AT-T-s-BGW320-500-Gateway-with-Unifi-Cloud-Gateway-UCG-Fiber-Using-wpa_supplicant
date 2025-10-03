@@ -59,6 +59,7 @@ Before starting, gather these items:
    flash set OMCI_SW_VER2 BGW320_3.20.5  # Same as above
    reboot
    ```
+   These are the only two that needs modifying:
    - **GPON_SN**: ONT ID from the BGW320-500 bottom label (e.g., `HUMAxxxxxxxx`).
    - **OMCI_SW_VER1/2**: Firmware version from BGW320 System Information page.
 
@@ -90,7 +91,7 @@ Before starting, gather these items:
 5. You can now remove the media converter and insert the SFP into the UCG Fiber Gateway (Port 7, `eth6`).
 
 ## Step 4: Extracting Certificates from BGW320-500
-1. Follow the [certs repo guide](https://github.com/0x888e/att-cert-extraction).
+1. Follow the [certs repo guide](https://github.com/0x888e/certs).
 2. Download firmware from the provided source.
 3. **Safety First**: Unplug the fiber cable.
 4. Downgrade to `spTurquoise320-500_3.17.5_dnvpnP_021_sec` (device will boot loop).
