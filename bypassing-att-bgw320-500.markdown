@@ -6,7 +6,7 @@ A huge thank you to the 8311 Discord community, especially @jack2333, @Dong Vu, 
 
 ## Resources
 The three main resources I followed:
-- [PON Madness - AT&T GPON ONT Cloning/Bypass](https://github.com/pon-madness/att-gpon-ont-cloning) (firmware source)
+- [PON Madness - AT&T GPON ONT Cloning/Bypass](https://docs.google.com/document/d/1gcT0sJKLmV816LK0lROCoywk9lXbPQ7l_4jhzGIgoTo/edit?tab=t.0#heading=h.5zuhlpp9nnh6) (firmware source)
 - [Unifi-gateway-wpa-supplicant by Evie Lau](https://github.com/evie-lau/unifi-gateway-wpa-supplicant)
 - [Certs Extraction Repo by 0x888e](https://github.com/0x888e/att-cert-extraction)
 
