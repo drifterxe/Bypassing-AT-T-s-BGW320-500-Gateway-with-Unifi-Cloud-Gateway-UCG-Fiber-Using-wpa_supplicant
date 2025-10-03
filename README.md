@@ -95,10 +95,10 @@ Before starting, gather these items:
 2. Download firmware from [Blue over at 8311](https://z.blueion.dev/folder/cmfvxq9iu006401mx7jlyvjxn).
 3. **Safety First**: Unplug the fiber cable.
 4. Downgrade to `spTurquoise320-500_3.17.5_dnvpnP_021_sec` (device will boot loop).
-5. Quickly patch to `spTurquoise320-500_3.18.1_sec` during the loop window.
-6. Run `download.py` from the certs repo to extract certificates.
+5. Quickly patch to `spTurquoise320-500_3.18.1_sec` during the loop window. (boot loop)
+6. Run `download.py` from the certs repo to extract certificates. (boot loop)
 7. Ignore extra firmwares in the ZIP (e.g., `4.24.6_sec`, `6.28.7_sec`).
-8. Reconnect fiber after extraction—the ISP will auto-upgrade.
+8. Reconnect fiber after extraction—the ISP will auto-upgrade firmware.
 
 ## Step 5: Setting Up `wpa_supplicant` on UCG Fiber Gateway
 1. Follow [Evie Lau’s guide](https://github.com/evie-lau/unifi-gateway-wpa-supplicant) up to the “Spoof MAC Address” section.
