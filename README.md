@@ -37,7 +37,7 @@ Before starting, gather these items:
 3. In Command Prompt, ping `192.168.1.1` to confirm connectivity.
 4. Open a web browser (try incognito mode if issues arise) and navigate to `http://192.168.1.1`.
 5. Flash the downloaded firmware (`M110_sfp_ODI_220923FS.tar`). Flash it **twice** (the module stores two images).
-6. Reset the module to default settings. *Important step*
+6. Reset the module to default settings. (I forgot this part and was causing me issues)
 7. In VLAN settings, set to **Manual Mode > Transparent** (to pass all traffic untagged).
 
 ## Step 2: Configuring the SFP Module via Telnet
