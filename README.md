@@ -173,5 +173,11 @@ ip link
 ```
 Make sure all VLAN instances are active, including vlan0 and any other VLANs configured in step #3.
 
+Check the wpa_supplicant instances:
+```
+pgrep -a wpa_supplicant
+```
+This command lists all active wpa_supplicant processes. Verify that the vlan0 instance is running after reboot.
+
 ## Conclusion
 With these steps, your setup should now bypass the BGW320-500 and run internet through the UCG Fiber Gateway. If issues arise, double-check VLAN, certs, and EAP rules. Thanks again to the 8311 Discord community for making this possible!
