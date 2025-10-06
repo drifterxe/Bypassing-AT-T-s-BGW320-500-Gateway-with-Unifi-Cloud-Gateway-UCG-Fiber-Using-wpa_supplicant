@@ -116,7 +116,6 @@ Before starting, gather these items:
 Create a systemd service file at `/etc/systemd/system/eth6.0-vlan.service` to configure the VLAN interface `eth6.0` before the network interface is brought up.
 
 ```bash
-/etc/systemd/system/eth6.0-vlan.service
 [Unit]
 Description=Configure VLAN eth6.0
 Before=wpa_supplicant-wired@eth6.0.service
