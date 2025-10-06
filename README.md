@@ -166,5 +166,12 @@ WantedBy=multi-user.target
    ```
 4. For surviving firmware updates, follow Evie Lau’s “Survive Firmware Updates” section (replace `eth1` with `eth6` for UCG).
 
+## Debugging / Troubleshooting
+If the configuration doesn’t persist after a reboot, start by checking:
+```
+ip link
+```
+Make sure all VLAN instances are active, including vlan0 and any other VLANs configured in step #3.
+
 ## Conclusion
 With these steps, your setup should now bypass the BGW320-500 and run internet through the UCG Fiber Gateway. If issues arise, double-check VLAN, certs, and EAP rules. Thanks again to the 8311 Discord community for making this possible!
