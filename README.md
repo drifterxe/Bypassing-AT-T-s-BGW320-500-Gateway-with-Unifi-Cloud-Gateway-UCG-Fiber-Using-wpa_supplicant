@@ -36,7 +36,7 @@ Before starting, gather these items:
 5. Flash the downloaded firmware (`M110_sfp_ODI_220923FS.tar`). Flash it **twice** (the module stores two images).
 6. Reset the module to default settings. (I forgot this part and was causing me issues)
 7. In VLAN settings, set to **Manual Mode > Transparent** (to pass all traffic untagged).
-
+![Alt text](odi_stick_settings.png)
 ## Step 2: Configuring the SFP Module via Telnet
 1. Install PuTTY and connect to `192.168.1.1` via Telnet.
 2. Run the following commands (based on PON Madness for BGW320-500):
