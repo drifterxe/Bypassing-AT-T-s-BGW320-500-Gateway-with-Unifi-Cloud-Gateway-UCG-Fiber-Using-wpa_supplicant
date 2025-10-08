@@ -178,6 +178,20 @@ Check the wpa_supplicant instances:
 pgrep -a wpa_supplicant
 ```
 This command lists all active wpa_supplicant processes. Verify that the vlan0 instance is running after reboot.
+## Access SFP module via UCG Fiber Gateway
 
+If your LAN uses a different subnet (e.g., `192.168.0.0/24`), you need to assign an IP to the SFP port and enable NAT translation.
+
+1. SSH into your UCG Fiber Gateway.
+
+2. Run the following commands:
+
+   ```bash
+   # Assign a management IP to eth6 (same subnet as the GPON SFP)
+   ip addr add dev eth6 local 192.168.1.2/24
+
+   # Enable NAT so packets to 192.168.1.1 appear from 192.168.1.2
+   iptables -t nat -I POSTROUTING -o eth6 -d 192.168.1.0/24 -j SNAT --to 192.168.1.2
+3. Ping 192.168.1.1 from another device on your lan and you should get a response.
 ## Conclusion
 With these steps, your setup should now bypass the BGW320-500 and run internet through the UCG Fiber Gateway. If issues arise, double-check VLAN, certs, and EAP rules. Thanks again to the 8311 Discord community for making this possible!
