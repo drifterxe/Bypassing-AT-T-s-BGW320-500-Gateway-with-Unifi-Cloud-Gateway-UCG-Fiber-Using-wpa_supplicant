@@ -98,6 +98,7 @@ Before starting, gather these items:
 8. Reconnect fiber after extraction—the ISP will auto-upgrade firmware.
 
 ## Step 5: Setting Up `wpa_supplicant` on UCG Fiber Gateway
+![Alt text](vlan_settings.png)
 1. Follow [Evie Lau’s guide](https://github.com/evie-lau/unifi-gateway-wpa-supplicant) up to the “Spoof MAC Address” section.
 2. In UCG web UI, assign the VLAN ID (from Step 3) to the WAN port.
 3. Assign the MAC address found on the bottom of BGW320-500.
